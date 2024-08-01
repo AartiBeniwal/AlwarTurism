@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels in Alwar</title>
+    <link rel="stylesheet" href="hotel.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <img src="logo.jpg" alt="logo" style="height: 50px; margin-left: 100px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Alwar.html" style="color: white;margin-right: 15px;">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotels.html" style="color: white;margin-left: 15px;">HOTELS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Places.html" style="color: white;margin-left: 15px;">PLACES TO VISIT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BestTimeToVisit.html" style="color: white;margin-left: 15px;">BEST TIME TO
+                        VISIT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html" style="color: white;margin-left: 15px;">FOOD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html" style="color: white;margin-left: 15px;">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <style>
+        .navbar-custom {
+            height: 90px;
+            background-color: black;
+        }
+    </style>
+    <div class="container">
+        <div class="form-container">
+            <form class="booking-form" id="bookingForm">
+                <h2>Hotel Booking</h2>
+
+                <label for="hotel">Select Hotel:</label>
+                <select id="hotel" name="hotel" required>
+                    <option value="">--Select a Hotel--</option>
+                    <option value="HotelA"
+                        data-image="http://pix5.agoda.net/hotelimages/34150360/-1/146d9341dc636f360ca12d62937259f9.jpg?s=1200x&ce=0"
+                        data-cost="2855">Hotel Cloud 9 - Rs.2855/night</option>
+                    <option value="HotelB"
+                        data-image="https://q-xx.bstatic.com/xdata/images/hotel/max1200/384468762.jpg?k=efd9a6adc81e123c8466794124bccee875ca24e4b736c7d1c4d2f4384c9bf66f&o="
+                        data-cost="4100">Shivir Aranya - Rs.4100/night</option>
+                    <option value="HotelC"
+                        data-image="http://pix4.agoda.net/hotelimages/44932820/-1/9f4d431717e90112b94eba3a85926bd4.jpg?s=1200x&ce=0"
+                        data-cost="5200">Spree Resort Sariska - Rs. 5200/night</option>
+                    <option value="HotelD"
+                        data-image="https://q-xx.bstatic.com/xdata/images/hotel/max500/403763852.jpg?k=bc7588fabb53acca6676b68d87f14265bec3524a755ee320fe166bf74180597c&o="
+                        data-cost="1350">Hotel Celebration - Rs. 1350/night</option>
+                    <option value="HotelE"
+                        data-image="https://q-xx.bstatic.com/xdata/images/hotel/max500/455504126.jpg?k=001afed494dfe0939af01d01260b1e4f186c50bf2d95e6875d859308ca01404d&o="
+                        data-cost="1200">Travel Curosity - Rs. 1200/night</option>
+                    <option value="HotelF"
+                        data-image="https://q-xx.bstatic.com/xdata/images/hotel/max500/425099316.jpg?k=048cc10e80638a81906e6d9184bacb4421b27c5305c9a81bc0768a477f77f3de&o="
+                        data-cost="593">Hotel Namo - Rs. 593/night</option>
+                    <option value="HotelG"
+                        data-image="http://pix2.agoda.net/hotelimages/135/13597111/13597111_20030618310089136895.jpg?s=1200x&ca=10&ce=1"
+                        data-cost="8000">Sariska Safari Lodge - Rs. 8000/night</option>
+                    <option value="HotelH"
+                        data-image="https://q-xx.bstatic.com/xdata/images/hotel/max500/325430992.jpg?k=4e5427a691963282852e1ae519f369fa917ff59808e2578789523261a14e460d&o="
+                        data-cost="1000">Hotel Green Hillhock - Rs. 1000/night</option>
+                    <option value="HotelH"
+                        data-image="https://q-xx.bstatic.com/xdata/images/hotel/max500/325430992.jpg?k=4e5427a691963282852e1ae519f369fa917ff59808e2578789523261a14e460d&o="
+                        data-cost="6000">Ratan Vilas Sariska - Rs. 6000/night</option>
+                    <option value="HotelH"
+                        data-image="http://pix2.agoda.net/hotelimages/111/111408/111408_16102316470048044092.jpg?s=1200x&ca=6&ce=1"
+                        data-cost="2970">Hotel Burja - Rs. 2970/night</option>
+                    </select>
+
+                <div id="hotelDetails" class="hotel-details">
+                    <img id="hotelImage"
+                        src="http://pix5.agoda.net/hotelimages/34150360/-1/146d9341dc636f360ca12d62937259f9.jpg?s=1200x&ce=0"
+                        alt="Hotel Image">
+                    <p id="hotelCost"></p>
+                </div>
+
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Hotel Collection</h2>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix5.agoda.net/hotelimages/34150360/-1/146d9341dc636f360ca12d62937259f9.jpg?s=1200x&ce=0"
+                        class="card-img-top" alt="Hotel A">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Cloud 9</h5>
+                        <p class="card-text">Rs.2855 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1200/384468762.jpg?k=efd9a6adc81e123c8466794124bccee875ca24e4b736c7d1c4d2f4384c9bf66f&o="
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title">Shivir Aranya</h5>
+                        <p class="card-text">Rs.4100 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix4.agoda.net/hotelimages/44932820/-1/9f4d431717e90112b94eba3a85926bd4.jpg?s=1200x&ce=0"
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">Spree Resort Sariska</h5>
+                        <p class="card-text">Rs.5200 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/403763852.jpg?k=bc7588fabb53acca6676b68d87f14265bec3524a755ee320fe166bf74180597c&o="
+                        class="card-img-top" alt="Hotel D">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Celebration</h5>
+                        <p class="card-text">Rs.1350 Onwards </p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more hotels as needed -->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/455504126.jpg?k=001afed494dfe0939af01d01260b1e4f186c50bf2d95e6875d859308ca01404d&o="
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title">Travel Curosity</h5>
+                        <p class="card-text">Rs. 1200 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/425099316.jpg?k=048cc10e80638a81906e6d9184bacb4421b27c5305c9a81bc0768a477f77f3de&o="
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Namo</h5>
+                        <p class="card-text">Rs.593 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix1.agoda.net/hotelimages/39557978/-1/1e4803fe851e72f895e86f4e4569ea0e.jpg?s=1200x&ce=0"
+                        class="card-img-top" alt="Hotel D">
+                    <div class="card-body">
+                        <h5 class="card-title">The fern N Ecotel</h5>
+                        <p class="card-text">Rs. 2300 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more hotels as needed -->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix2.agoda.net/hotelimages/135/13597111/13597111_20030618310089136895.jpg?s=1200x&ca=10&ce=1"
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title">Sariska Safari Lodge</h5>
+                        <p class="card-text">Rs. 8000 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/325430992.jpg?k=4e5427a691963282852e1ae519f369fa917ff59808e2578789523261a14e460d&o="
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Green Hillhock</h5>
+                        <p class="card-text">Rs. 1000 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix5.agoda.net/hotelimages/37353356/-1/ed9dea183be34444ceb1b5b8215d29cc.jpg?s=1200x&ce=0"
+                        class="card-img-top" alt="Hotel D">
+                    <div class="card-body">
+                        <h5 class="card-title">Ratan Vilas Sariska </h5>
+                        <p class="card-text">Rs. 6000 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more hotels as needed -->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix2.agoda.net/hotelimages/111/111408/111408_16102316470048044092.jpg?s=1200x&ca=6&ce=1"
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Burja</h5>
+                        <p class="card-text">Rs. 2970 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix3.agoda.net/hotelimages/738611/-1/71720572601d83e187dfa5b649302697.jpg?s=1200x&ca=26&ce=0"
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">Ritumbhara Resorts</h5>
+                        <p class="card-text">Rs. 2040 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix3.agoda.net/hotelimages/9759174/-1/cb66e172f1989fd3a7dbc1ddd5efbda9.jpg?s=1200x&ca=9&ce=1"
+                        class="card-img-top" alt="Hotel D">
+                    <div class="card-body">
+                        <h5 class="card-title">Starlite Nimrana</h5>
+                        <p class="card-text">Rs. 3000 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more hotels as needed -->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix2.agoda.net/hotelimages/296/296023/296023_14031020060018630506.jpg?s=1200x&ca=2&ce=1"
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title">Shiv Oasis Resort</h5>
+                        <p class="card-text">Rs. 5200 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix1.agoda.net/hotelimages/276/276429/276429_16111714500048831400.jpg?s=1200x&ca=6&ce=1"
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">Days Hotel</h5>
+                        <p class="card-text">Rs. 3300 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/150203142.jpg?k=dc426ff55860698e0bc2387ea17f23bbd214ae893828844a64ecb0bf61985db2&o="
+                        class="card-img-top" alt="Hotel D">
+                    <div class="card-body">
+                        <h5 class="card-title">Sparrow INN</h5>/h5>
+                        <p class="card-text">Rs.2500 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more hotels as needed -->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix4.agoda.net/hotelimages/293/29313462/29313462_211210194400109573321.jpg?s=1200x"
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Aravali</h5>
+                        <p class="card-text">Rs.2100 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix5.agoda.net/hotelimages/33397037/-1/a0b5d83f006972a24880d418249c04d2.jpg?s=1200x&ce=0"
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">The pure Nature Hotel</h5>
+                        <p class="card-text">Rs.5200 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="http://pix1.agoda.net/hotelimages/31058831/0/042a822c0bf07b7161042caa03574276.jpg?s=1200x&ca=28&ce=0"
+                        class="card-img-top" alt="Hotel D">
+                    <div class="card-body">
+                        <h5 class="card-title">Alampat Nest</h5>
+                        <p class="card-text">Rs.7000 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more hotels as needed -->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/477783446.jpg?k=7c5e7ceb333be58c689b01128294d70b3ffc523963f108e3a90334b1ccf8c182&o="
+                        class="card-img-top" alt="Hotel B">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sparrow INN Ankur</h5>
+                        <p class="card-text">Rs. 2000 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/463270351.jpg?k=9ba58619aaa589d83af7a8462f221e6e3d068eed249c6fb52f34cbcb4aee4c6d&o="
+                        class="card-img-top" alt="Hotel C">
+                    <div class="card-body">
+                        <h5 class="card-title">Fort view Guest House</h5>
+                        <p class="card-text">Rs.1800 Onwards</p>
+                        <a href="payment.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="height: 300px;">
+        <div class="container" style="background-color: black;">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-white">Contact Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Email: contact@example.com</a></li>
+                        <li><a class="text-muted" href="#">Phone: +1234567890</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6" style="background-color:black;">
+                    <h5 class="text-white">Follow Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" style="background-color: black;">
+            <span class="text-muted">© 2024 Best Time To Visit. All rights reserved.</span>
+        </div>
+    </footer>
+    <style>
+        .footer {
+            position: relative;
+            height: 00px;
+            width: 100%;
+            background-color: rgb(21, 20, 20);
+            color: rgb(4, 4, 4);
+        }
+    </style>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scriptshotels.js"></script>
+</body>
+
+</html>

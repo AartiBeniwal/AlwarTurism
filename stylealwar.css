@@ -1,0 +1,235 @@
+.navbar-inverse {
+    background-color: rgb(23, 22, 22);
+  }
+
+  .navbar-header img {
+    height: 50px;
+  }
+
+  .dropdown-menu {
+    background-color: rgb(16, 13, 13);
+  }
+
+  .dropdown-menu a {
+    color: white;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+  .white_board {
+    padding: 0px;
+    height: 650px;
+    background-color: white;
+    top: 650px;
+    position: relative;
+  }
+  h4 {
+    font-family: "open sans condensed", sans-serif;
+    /* Set Open Sans Condensed as primary font */
+    font-size: 18px;
+    text-align: center;
+
+    color: #343333;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+
+  .col-md-4 {
+    margin-top: 4rem;
+  }
+
+  .blog-post {
+    margin-top: 10rem;
+    /* Adjust this margin as needed */
+  }
+  .card-custom{
+    background-color: #87CEEB; /* Sky color */
+    max-width: 600px; /* Custom width */
+    margin-top: 80px; /* Top margin for spacing */
+  }
+  .card-custom .card-body {
+    padding: 20px;
+  }
+  .related-post-item {
+    margin-bottom: 20px;
+  }
+  .related-post-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  .related-post-item img:hover {
+    transform: scale(1.05);
+  }
+  .category {
+    font-size: 30px;
+    color: #678dae;
+    margin-top: 10px;
+  }
+  .name {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .heading3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .nearby-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .nearby-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  .nearby-item img {
+    max-width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .nearby-item div {
+    font-weight: bold;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+  .wrapper {
+max-width: 60%;
+
+}
+
+.wrapper > p,
+.wrapper > h1 {
+margin: 1.5rem 0;
+text-align: center;
+}
+
+.wrapper > h1 {
+letter-spacing: 3px;
+}
+
+.accordion {
+background-color: white;
+color: rgba(0, 0, 0, 0.8);
+cursor: pointer;
+font-size: 15px;
+width: 100%;
+padding: 1rem 1.5rem;
+border: none;
+outline: none;
+transition: 0.4s;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+}
+
+.accordion i {
+font-size: 3rem;
+}
+
+.active,
+.accordion:hover {
+background-color: #f1f7f5;
+}
+.pannel {
+padding: 0 2rem 2.5rem 2rem;
+background-color: white;
+overflow: hidden;
+background-color: #f1f7f5;
+display: none;
+}
+.pannel p {
+color: rgba(0, 0, 0, 0.7);
+font-size: 15px;
+line-height: 1.4;
+}
+
+.faq {
+border: 1px solid rgba(0, 0, 0, 0.2);
+margin: 0px 0;
+}
+.faq.active {
+border: none;
+}
+footer {
+    margin-top: 150px;
+    margin-left: -190px;
+    background-color: #000000;
+    color: #ececec;
+    padding: 40px 0;
+    width: 150%;
+  }
+
+  .footer-section h3 {
+    margin-left: -100px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .footer-section p {
+    margin-left: -100px;
+    margin-bottom: 10px;
+    color: #cccccc;
+  }
+
+  .footer-section.links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section.links ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-section.links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #777;
+    color: #cccccc;
+  }

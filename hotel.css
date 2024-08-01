@@ -1,0 +1,146 @@
+body {
+    background-image: url('https://thumbs.dreamstime.com/b/art-spring-flowers-background-frame-52852938.jpg');
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-attachment: fixed; /* Makes the background stay in place on scroll */
+    background-position: center; /* Centers the background image */
+    color: white; /* Optional: Change text color for better readability */
+}
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-image: url('https://thumbs.dreamstime.com/b/art-spring-flowers-background-frame-52852938.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    
+}
+
+.booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f2dede;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.booking-form select,
+.booking-form input[type="date"],
+.booking-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.booking-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.hotel-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#hotelImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hotelCost {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hotel collection styling */
+
+.hotel-collection {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hotel-collection h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
